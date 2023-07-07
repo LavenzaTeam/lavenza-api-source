@@ -1,0 +1,63 @@
+skills: 
+  cleave: &cleave
+    name: "Cleave"
+    cost: "4% HP"
+    effect: "Deal light physical damage to one foe"
+  eiha: &eiha
+    name: "Eiha"
+    cost: "4 SP"
+    effect: "Deal light curse damage to one foe"
+
+traits:
+  pinch_anchor: &pinch_anchor
+    name: "Pinch Anchor"
+    effect: "Allows use of ambush-only skills after Baton Pass."
+
+items:
+  arsene's_cane: &arsene's_cane
+    name: "Arsene's Cane"
+    type: "jokerMelee"
+    effect: "130 ATK / 92 ACC + Random Ailment (Low)"
+  the_great_thief_stick: &the_great_thief_stick
+    name: "The Great Thief Stick"
+    type: "jokerMelee"
+    effect: "150 ATK / 92 ACC + Random Ailment (Med)"
+
+
+persona: 
+  arsene: 
+    name: "Arsene"
+    arcana: "Fool"
+    level: "1"
+    trait: *pinch_anchor
+    item: *arsene's_cane
+    itemAlarm: *the_great_thief_stick
+    baseStats:
+      strength: "2"
+      magic: "2"
+      endurance: "2"
+      agility: "3"
+      luck: "1"
+    affinities:
+      phys: "none"
+      gun: "none"
+      fire: "none"
+      ice: "weak"
+      elec: "none"
+      wind: "none"
+      psy: "none"
+      nuke: "none"
+      bless: "weak"
+      curse: "resist"
+      almighty: "none"
+    skills: 
+      cleave: 
+        <<: *cleave
+        level: "Innate"
+      eiha: 
+        <<: *eiha
+        level: "Innate"
+
+shadows:
+
+fusion: 
