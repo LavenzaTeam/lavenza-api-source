@@ -5,7 +5,11 @@
   "main": "app.js",
   "scripts": {
     "test": "node test.js",
-    "compile": "node compile.js"
+    "compile": "node compile.js",
+    "compile:all": "node compile.js all",
+    "compile:p5r": "node compile.js p5r",
+    "compile:p4g": "node compile.js p4g",
+    "compile:p3re": "node compile.js p3re"
   },
   "author": "Arkane",
   "license": "MIT",

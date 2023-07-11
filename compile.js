@@ -1,7 +1,8 @@
 const fs = require("fs");
 const yaml = require("js-yaml");
 
-let filesToCompile = "p5r";
+let compileOption = process.argv.slice(2);
+let filesToCompile = compileOption[0] || "all";
 
 //compile p5r data to json
 function compileP5RData() {
