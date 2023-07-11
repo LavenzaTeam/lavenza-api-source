@@ -2,7 +2,7 @@
   "name": "lavenza-api",
   "version": "0.0.1",
   "description": "",
-  "main": "app.js",
+  "main": "test.js",
   "scripts": {
     "test": "node test.js",
     "compile": "node compile.js",
