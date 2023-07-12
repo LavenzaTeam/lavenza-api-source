@@ -1,8 +1,218 @@
 skills: 
+  # Physical Skills
+  lunge: &lunge
+    name: "Lunge"
+    cost: "5% HP"
+    effect: "Light Physical Damage to 1 foe."
   cleave: &cleave
     name: "Cleave"
-    cost: "4% HP"
-    effect: "Deal light physical damage to one foe"
+    cost: "6% HP"
+    effect: "Light Physical damage to 1 foe."
+  power_slash: &power_slash
+    name: "Power Slash"
+    cost: "10% HP"
+    effect: "Medium Physical damage to 1 foe."
+  assault_dive: &assault_dive
+    name: "Assault Dive"
+    cost: "13% HP"
+    effect: "Heavy Physical damage to 1 foe."
+  megaton_raid: &megaton_raid
+    name: "Megaton Raid"
+    cost: "16% HP"
+    effect: "Severe Physical damage to 1 foe."
+  brave_blade: &brave_blade
+    name: "Brave Blade"
+    cost: "21% HP"
+    effect: "Colossal Physical damage to 1 foe."
+  god's_hand: &god's_hand
+    name: "God's Hand"
+    cost: "22% HP"
+    effect: "Colossal Physical damage to 1 foe."
+  giant_slice: &giant_slice
+    name: "Giant Slice"
+    cost: "9% HP"
+    effect: "Medium Physical damage to 1 foe. Stronger under Baton Pass."
+  rising_slash: &rising_slash
+    name: "Rising Slash"
+    cost: "14% HP"
+    effect: "Heavy Physical damage to 1 foe. Stonger under Baton Pass."
+  deadly_fury: &deadly_fury
+    name: "Deadly Fury"
+    cost: "18% HP"
+    effect: "Severe Physical damage to 1 foe. Stronger under Baton Pass."
+  double_fangs: &double_fangs
+    name: "Double Fangs"
+    cost: "10% HP"
+    effect: "Light Physical damage to 1 foe 2x."
+  kill_rush: &kill_rush
+    name: "Kill Rush"
+    cost: "14% HP"
+    effect: "Light Physical damage to 1 foe 1x to 3x."
+  gatling_blow: &gatling_blow
+    name: "Gatling Blow"
+    cost: "16% HP"
+    effect: "Light Physical damage to 1 foe 3x to 4x."
+  tempest_slash: &tempest_slash
+    name: "Tempest Slash"
+    cost: "17% HP"
+    effect: "Minuscule Physical damage to 1 foe 3x to 5x."
+  myriad_slashes: &myriad_slashes
+    name: "Myriad Slashes"
+    cost: "20% HP"
+    effect: "Medium Physical damage to 1 foe 2x to 3x."
+  terror_claw: &terror_claw
+    name: "Terror Claw"
+    cost: "8% HP"
+    effect: "Light Physical damage and inflict Fear (medium odds) to 1 foe."
+  headbutt: &headbutt
+    name: "Headbutt"
+    cost: "9% HP"
+    effect: "Medium Physical damage and inflict Forget (medium odds) to 1 foe."
+  hysterical_slap: &hysterical_slap
+    name: "Hysterical Slap"
+    cost: "9% HP"
+    effect: "Medium Physical damage and inflict Rage (medium odds) to 1 foe."
+  brain_shake: &brain_shake
+    name: "Brain Shake"
+    cost: "9% HP"
+    effect: "Medium Physical damage and inflict Brainwash (medium odds) to 1 foe."
+  sledgehammer: &sledgehammer
+    name: "Sladgehammer"
+    cost: "10% HP"
+    effect: "Medium Physical damage and inflict Dizzy (medium odds) to 1 foe."
+  skull_cracker: &skull_cracker
+    name: "Skull Cracker"
+    cost: "10% HP"
+    effect: "Medium Physical damage and inflict Confusion (medium odds) to 1 foe."
+  negative_pile: &negative_pile
+    name: "Negative Pile"
+    cost: "12% HP"
+    effect: "Heavy Physical damage and inflict Despair (medium odds) to 1 foe."
+  death_scythe: &death_scythe
+    name: "Death Scythe"
+    cost: "20% HP"
+    effect: "Severe Physical damage and inflict Fear (medium odds) to 1 foe."
+  lucky_punch: &lucky_punch
+    name: "Lucky Punch"
+    cost: "3% HP"
+    effect: "Minuscule Physical damage to 1 foe. High critical rate."
+  miracle_punch: &miracle_punch
+    name: "Miracle Punch"
+    cost: "8% HP"
+    effect: "Medium Physical damage to 1 foe. High critical rate."
+  sword_dance: &sword_dance
+    name: "Sword Dance"
+    cost: "25% HP"
+    effect: "Colossal Physical damage to 1 foe. High critical rate."
+  cornered_fang: &cornered_fang
+    name: "Cornered Fang"
+    cost: "10% HP"
+    effect: "Medium Physical damage to 1 foe. Stronger when surrounded."
+  ayamur: &ayamur
+    name: "Ayamur"
+    cost: "25% HP"
+    effect: "Medium Physical damage to 1 foe 3x. High Accuracy. Unique to Baal."
+  laevateinn: &laevateinn
+    name: "Laevateinn"
+    cost: "25% HP"
+    effect: "Colossal Physical damage to 1 foe. Unique to Loki and Hereward."
+  masquerade: &masquerade
+    name: "Masquerade"
+    cost: "25% HP"
+    effect: "Severe Physical damage to 1 foe 2x. Unique to Ella."
+  cross_slash: &cross_slash
+    name: "Cross Slash"
+    cost: "20% HP"
+    effect: "Heavy Physical damage to 1 foe 2x. High Accuracy. Unique to Izanagi."
+  beast_weaver: &beast_weaver
+    name: "Beast Weaver"
+    cost: "20% HP"
+    effect: "Colossal Physical damage to 1 foe and user's attack power is greatly reduced (independent from -kaja/-nda effects). Unique to Ariadne."
+  vajra_blast: &vajra_blast
+    name: "Vajra Blast"
+    cost: "13% HP"
+    effect: "Medium Physical damage to all foes."
+  vicious_strike: &vicious_strike
+    name: "Vicious Strike"
+    cost: "18% HP"
+    effect: "Medium Physical damage to all foes."
+  heat_wave: &heat_wave
+    name: "Heat Wave"
+    cost: "20% HP"
+    effect: "Heavy Physical damage to all foes."
+  vorpal_blade: &vorpal_blade
+    name: "Vorpal Blade"
+    cost: "23% HP"
+    effect: "Severe Physical damage to all foes."
+  gigantomachia: &gigantomachia
+    name: "Gigantomachia"
+    cost: "25% HP"
+    effect: "Colossal Physical damage to all foes."
+  rampage: &rampage
+    name: "Rampage"
+    cost: "13% HP"
+    effect: "Light Physical damage to all foes 1x to 3x."
+  swift_strike: &swift_strike
+    name: "Swift Strike"
+    cost: "17% HP"
+    effect: "Minuscule Physical damage to all foes 2x to 4x."
+  deathbound: &deathbound
+    name: "Deathbound"
+    cost: "22% HP"
+    effect: "Medium Physical damage to all foes 1x to 2x."
+  agneyastra: &agneyastra
+    name: "Agneyastra"
+    cost: "24% HP"
+    effect: "Medium Physical damage to all foes 1x to 3x."
+  memory_blow: &memory_blow
+    name: "Memory Blow"
+    cost: "15% HP"
+    effect: "Light Physical damage and inflict Forget (low odds) to all foes."
+  dormin_rush: &dormin_rush
+    name: "Dormin Rush"
+    cost: "16% HP"
+    effect: "Medium Physical damage and inflict Sleep (low odds) to all foes."
+  oni-kagura: &oni-kagura
+    name: "Oni-Kagura"
+    cost: "16% HP"
+    effect: "Medium Physical damage and inflict Rage (low odds) to all foes."
+  flash_bomb: &flash_bomb
+    name: "Flash Bomb"
+    cost: "19% HP"
+    effect: "Medium Physical damage and inflict Dizzy (low odds) to all foes."
+  mind_slice: &mind_slice
+    name: "Mind Slice"
+    cost: "19% HP"
+    effect: "Medium Physical damage and inflict Confuse (low odds) to all foes."
+  bad_beat: &bad_beat
+    name: "Bad Beat"
+    cost: "21% HP"
+    effect: "Medium Physical damage and inflict Despair (low odds) to all foes."
+  bloodbath: &bloodbath
+    name: "Bloodbath"
+    cost: "22% HP"
+    effect: "Heavy Physical damage and inflict Fear (low odds) to all foes."
+  brain_buster: &brain_buster
+    name: "Brain Buster"
+    cost: "22% HP"
+    effect: "Heavy Physical damage and inflict Brainwash (low odds) to all foes."
+  hassou_tobi: &hassou_tobi
+    name: "Hassou Tobi"
+    cost: "25% HP"
+    effect: "Light Physical damage to all foes 8x. Unique to Yoshitsune."
+  miracle_rush: &miracle_punch
+    name: "Miracle Rush"
+    cost: "16% HP"
+    effect: "Medium Physical damage to all foes. High critical rate. Unique to Diego."
+  akashic_arts: &akashic_arts
+    name: "Akashic Arts"
+    cost: "20% HP"
+    effect: "Severe Physical damage to all foes 1x to 2x, high critical rate. Unique to Athena."
+
+  # Gun Skills
+  
+
+  # Curse Skills
   eiha: &eiha
     name: "Eiha"
     cost: "4 SP"
