@@ -8,7 +8,7 @@ let filesToCompile = compileOption[0] || "all";
 function compileP5RData() {
     let p5rData = JSON.parse(JSON.stringify(yaml.load(fs.readFileSync('./data/p5r.yml', 'utf8')), null, 2));
     try {
-        fs.writeFileSync('./compile/p5r.json', p5rData);
+        fs.writeFileSync('./compile/p5r.json', JSON.stringify(p5rData));
     } catch (error) {
         console.error(error);
     }
@@ -18,7 +18,7 @@ function compileP5RData() {
 function compileP4GData() {
     let p4gData = JSON.parse(JSON.stringify(yaml.load(fs.readFileSync('./data/p4g.yml', 'utf8')), null, 2));
     try {
-        fs.writeFileSync('./compile/p4g.json', p4gData);
+        fs.writeFileSync('./compile/p4g.json', JSON.stringify(p4gData));
     } catch (error) {
         console.error(error);
     }
@@ -28,7 +28,7 @@ function compileP4GData() {
 function compileP3REData() {
     let p3reData = JSON.parse(JSON.stringify(yaml.load(fs.readFileSync('./data/p3re.yml', 'utf8')), null, 2));
     try {
-        fs.writeFileSync('./compile/p3re.json', p3reData);
+        fs.writeFileSync('./compile/p3re.json', JSON.stringify(p3reData));
     } catch (error) {
         console.error(error);
     }
