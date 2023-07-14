@@ -210,6 +210,32 @@ skills:
     effect: "Severe Physical damage to all foes 1x to 2x, high critical rate. Unique to Athena."
 
   # Gun Skills
+  snap: &snap
+    name: "Snap"
+    cost: "9% HP"
+    effect: "Medium Gun damage to 1 foe."
+  double_shot: &double_shot
+    name: "Double Shot"
+    cost: "12% HP"
+    effect: "Light Gun damage to 1 foe 2x."
+  one-shot_kill: &one-shot_kill
+    name: "One-Shot Kill"
+    cost: "17% HP"
+    effect: "Severe Gun damage to 1 foe. High critical rate."
+  dream_needle: &dream_needle
+    name: "Dream Needle"
+    cost: "8% HP"
+    effect: "Light Gun damage and inflict Sleep (medium odds) to 1 foe."
+  triple_down: &triple_down
+    name: "Triple Down"
+    cost: "16% HP"
+    effect: "Light Gun damage to all foes 3x."
+  riot_gun: &riot_gun
+    name: "Riot Gun"
+    cost: "24% HP"
+    effect: "Severe Gun damage to all foes."
+
+  # Fire Skills
   
 
   # Curse Skills
